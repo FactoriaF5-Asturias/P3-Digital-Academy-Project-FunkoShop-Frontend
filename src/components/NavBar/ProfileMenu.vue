@@ -122,8 +122,8 @@ const { t } = useI18n()
             Wishlist
           </a>
           </MenuItem>
-          <!-- <MenuItem v-slot="{ active }">
-          <a href="/profile" :class="[active ? 'bg-gray-100' : '', ' px-4 py-2 text-sm text-gray-700 flex flex-row']">
+          <MenuItem v-slot="{ active }">
+          <a href="/orders" :class="[active ? 'bg-gray-100' : '', ' px-4 py-2 text-sm text-gray-700 flex flex-row']">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
               class="w-5 h-5 text-slate-400 mr-3">
               <path fill-rule="evenodd"
@@ -132,7 +132,7 @@ const { t } = useI18n()
             </svg>
             Orders
           </a>
-          </MenuItem> -->
+          </MenuItem>
           <MenuItem v-slot="{ active }">
           <a href="#" @click="logout.logout()" :class="[
             active ? 'bg-gray-100' : '',
